@@ -51,7 +51,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 160%;
     color: #424551;
     
 }
@@ -238,17 +238,31 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
             }
         }
         .courses-statistics{
-            .col-lg-5{
+            .col-lg-3{
+                display: flex;
                 padding: 0;
                 align-items: center;
-                .col-lg-5{
-                    display: flex;
-                    justify-content: center;
-                    .statistics-number{
-                        @include title-46();
+                justify-content: space-between;
+                &:nth-child(2){
+                    img{
+                        margin-left: 1rem !important;
                     }
                 }
+                img{
+                margin-left: 4rem;
                 
+                }
+                div{
+                    display: flex;
+                    align-items: center;
+                    .statistics-number{
+                        @include title-46();
+                        margin-right: 0.8rem;
+                    }
+                    .statistics-name{
+                        @include link-16();
+                    }
+                }
             }
             
             

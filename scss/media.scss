@@ -3,8 +3,8 @@
     
 // }
 
-// // Large devices (desktops, less than 1200px)
-// @media only screen and (max-width: 1199.98px) {
+// Large devices (desktops, less than 1200px)
+@media only screen and (max-width: 1199.98px) {
 //     // html{
 //     //     font-size: 14x;
 //     // }
@@ -74,8 +74,33 @@
 //         }
 //     }
 
-    
-// }
+    .container{
+        .courses-statistics{
+            .col-lg-3{
+                display: flex;
+                padding: 0;
+                align-items: center;
+                justify-content: space-between;
+                &:nth-child(2){
+                    img{
+                        margin-left: 1rem !important;
+                    }
+                }
+                img{
+                margin-left: 4rem;
+                
+                }
+                div{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+            }
+            
+            
+        }
+    }
+}
 
 // Medium devices (tablets, less than 992px)
 @media only screen and (max-width: 991.98px) {
