@@ -1,0 +1,67 @@
+@media only screen and (max-width: 991.98px) {
+  .main .container .container-fluid .navbar-collapse {
+    background-color: #fff;
+  }
+  .main .container .container-fluid .navbar-collapse .navbar-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main .container .container-fluid .navbar-collapse .navbar-btn .nav-item .subscribe-btn {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding: 0;
+  }
+  .main .container .container-fluid .navbar-collapse .navbar-btn .nav-item button {
+    margin-bottom: 1rem;
+  }
+  .container .row {
+    padding-top: 10rem;
+  }
+  .container .row .col-sm-12 {
+    padding-top: 2rem;
+  }
+  .container .row .col-sm-12 .bold-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html {
+    font-size: 10px;
+  }
+  .container .row {
+    padding-top: 10rem;
+  }
+  .container .row .col-sm-12 {
+    padding-top: 2rem;
+  }
+  .container .row .col-sm-12 .play-showreel {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 479.98px) {
+  html {
+    font-size: 8px;
+  }
+  .container .row {
+    padding-top: 10rem;
+  }
+  .container .row .col-sm-12 {
+    padding-top: 2rem;
+  }
+  .container .row .col-sm-12 .play-showreel {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+// Variables:
+$font-lato: 'lato', sans-serif;
+$color-primary: #FF3F3A;
+$color-gray-600: #9A9CA5;
+$color-gray-700: #787A80;
+$color-gray-800: #424551;
+$color-gray-900: #1E212C;
+$color-suces: #03CEA4;
+$color-warning: #f89828;
+$color-info: #5A87FC;
+$color-red-magenta: #F52F6E;
+$color-danger: #FF4242;
+$btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+//  ;
+
+//mixins:
+@mixin bold-title-64 {
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0625rem;
+}
+
+@mixin sub-title-16 {
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+    color: #1E212C;
+}
+@mixin title-46 {
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.875rem;
+    line-height: 1.3rem;
+    color: #1E212C;
+}
+
+@mixin link-16 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #424551;
+    
+}
+
+@mixin btn-gradient {
+    background: $btn-gradient;
+    border-radius: 0.25rem;
+    color: #fff;
+}
+
+@mixin paragraph-20 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: $color-gray-900;
+    
+}
+
+@mixin lear-name-20 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: $color-gray-800;
+}
+//  ;
+//    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+.main {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main .main-navbar {
+  width: 100%;
+  position: absolute;
+}
+
+.main .main-navbar .container {
+  z-index: 999;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main .main-navbar .container .container-fluid {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.main .main-navbar .container .container-fluid .navbar-brand .img-fluid {
+  width: 8rem;
+}
+
+.main .main-navbar .container .container-fluid .get-consultation-btn {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  border-radius: 0.25rem;
+  color: #fff;
+  width: 12.93rem;
+  height: 3.25rem;
+  border: none;
+}
+
+.main .main-navbar .container .container-fluid .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.main .main-navbar .container .container-fluid .navbar-toggler .navbar-toggler-icon {
+  position: relative;
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #1E212C;
+}
+
+.main .main-navbar .container .container-fluid .navbar-toggler .navbar-toggler-icon::after {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  content: '';
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #1E212C;
+}
+
+.main .main-navbar .container .container-fluid .navbar-toggler .navbar-toggler-icon::before {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  content: '';
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #1E212C;
+}
+
+.main .main-navbar .container .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #424551;
+}
+
+.main .main-navbar .container .container-fluid .navbar-collapse .navbar-nav .nav-item .get-consultation-btn {
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  border-radius: 0.25rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12.93rem;
+  height: 3.25rem;
+}
+
+.main .main-navbar .container .container-fluid .navbar-collapse .navbar-nav .nav-item .subscribe-btn {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #424551;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10rem;
+  height: 3.25rem;
+  background-color: transparent;
+  border: none;
+}
+
+.main .main-navbar .container .container-fluid .navbar-collapse .navbar-nav .nav-item .subscribe-btn .img-fluid {
+  width: 1.125rem;
+}
+
+.main .container .row {
+  padding: 0;
+  padding-top: 10rem;
+  margin: 0;
+}
+
+.main .container .row .col-sm-12 {
+  padding: 0;
+  padding-top: 2rem;
+}
+
+.main .container .row .col-sm-12 .play-showreel {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.87rem;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1E212C;
+  margin-bottom: 4.5rem;
+  padding: 0 1rem;
+}
+
+.main .container .row .col-sm-12 .play-showreel .play-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background-color: #FF3F3A;
+  -webkit-box-shadow: 0 0 0 1rem rgba(255, 63, 58, 0.12);
+          box-shadow: 0 0 0 1rem rgba(255, 63, 58, 0.12);
+}
+
+.main .container .row .col-sm-12 .play-showreel .play-icon .fas {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.main .container .row .col-sm-12 .bold-title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.0625rem;
+}
+
+.main .container .row .col-sm-12 .row .btn-about-us {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #424551;
+  width: 10rem;
+  height: 3.25rem;
+  border: 0.1rem solid #F52F6E;
+  border-radius: 0.25rem;
+  margin-right: 1rem;
+  background-color: transparent;
+  color: #FF3F3A;
+}
+
+.main .container .row .col-sm-12 .row .btn-courses {
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  border-radius: 0.25rem;
+  color: #fff;
+  border: none;
+  width: 12.5rem;
+  height: 3.25rem;
+}
+
+.main .container .courses-statistics .col-lg-5 {
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 47%;
+}
+
+.main .container .courses-statistics .col-lg-5 .col-lg-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .container .courses-statistics .col-lg-5 .col-lg-5 .statistics-number {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.875rem;
+  line-height: 1.3rem;
+  color: #1E212C;
+}
+
+.main .container .courses-statistics .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10%;
+}
+
+.main .container .courses-statistics .col img {
+  width: 8px;
+}
+/*# sourceMappingURL=style.css.map */

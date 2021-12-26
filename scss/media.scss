@@ -1,0 +1,159 @@
+// // X-Large devices (large desktops, less than 1400px)
+// @media only screen and (max-width: 1399.98px) {
+    
+// }
+
+// // Large devices (desktops, less than 1200px)
+// @media only screen and (max-width: 1199.98px) {
+//     // html{
+//     //     font-size: 14x;
+//     // }
+//     .main{
+//         .container{
+//             .container-fluid{
+//             //     .nav-toggles{
+//             //         display: flex;
+//             //         justify-content: space-between;
+//             //         align-items: center;
+//             //         .get-consultation-btn{
+//             //             display: flex !important;
+//             //         }
+//             //         .navbar-toggler{
+//             //             display: flex !important;
+//             //             &:focus{
+//             //                 box-shadow: none;
+//             //             }
+//             //             .navbar-toggler-icon{
+//             //                 position: relative;
+//             //                 width: 2rem;
+//             //                 height: 0.25rem;
+//             //                 &::after{
+//             //                     position: absolute;
+//             //                     top: 0.5rem;
+//             //                     left: 0;
+//             //                     content: '';
+//             //                     width: 2rem;
+//             //                     height: 0.25rem;
+//             //                 }
+//             //                 &::before{
+//             //                     position: absolute;
+//             //                     bottom: 0.5rem;
+//             //                     left: 0;
+//             //                     content: '';
+//             //                     width: 2rem;
+//             //                     height: 0.25rem;
+//             //                 }
+//             //             }
+//             //         }
+//             //     }
+//                 .navbar-collapse{
+//                     .navbar-nav{
+//                         .nav-item{
+//                             .get-consultation-btn{
+//                                 display: flex;
+//                                 justify-content: center;
+//                                 align-items: center;
+//                                 width: 207px;
+//                                 height: 52px;
+//                             }
+//                             .subscribe-btn{
+//                                 display: flex;
+//                                 justify-content: center;
+//                                 align-items: center;
+//                                 width: 10rem;
+//                                 height: 52px;
+//                                 background-color: transparent;
+//                                 border: none;
+//                             }
+    
+//                         }
+//                     }
+                    
+//                 }
+//             }
+//         }
+//     }
+
+    
+// }
+
+// Medium devices (tablets, less than 992px)
+@media only screen and (max-width: 991.98px) {
+   
+    .main{
+        .container{
+            .container-fluid{
+                .navbar-collapse{
+                    background-color: #fff;
+                    .navbar-btn{
+                        display: flex;
+                        flex-direction: column-reverse;
+                        .nav-item{
+                            .subscribe-btn{
+                                justify-content: start;
+                                padding: 0;
+                            }
+                            button{
+                                margin-bottom: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container{
+        .row{
+            padding-top: 10rem;
+            .col-sm-12{
+                padding-top: 2rem;
+                .bold-title{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    html{
+        font-size: 10px;
+    }
+    .container{
+        .row{
+            padding-top: 10rem;
+            .col-sm-12{
+                padding-top: 2rem;
+                .play-showreel{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 479.98px) {
+    html{
+        font-size: 8px;
+    }
+    .container{
+        .row{
+            padding-top: 10rem;
+            .col-sm-12{
+                padding-top: 2rem;
+                .play-showreel{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+}
