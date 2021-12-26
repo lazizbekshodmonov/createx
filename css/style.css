@@ -238,18 +238,4 @@
   line-height: 1.3rem;
   color: #1E212C;
 }
-
-.main .container .courses-statistics .col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 10%;
-}
-
-.main .container .courses-statistics .col img {
-  width: 8px;
-}
 /*# sourceMappingURL=style.css.map */
