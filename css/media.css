@@ -135,15 +135,10 @@
   html {
     font-size: 10px;
   }
-  .main .main-header .row .col-sm-12 .row .col-5 {
-    width: 16rem;
-    height: 5.5rem;
-    font-size: 2rem;
-  }
-  .main .main-header .row .col-sm-12 .row .col-7 {
-    width: 20rem;
-    height: 5.5rem;
-    font-size: 1.7rem;
+  .container .header-container .col-sm-12 .play-showreel {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
