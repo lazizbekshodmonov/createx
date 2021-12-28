@@ -43,7 +43,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     font-style: normal;
     font-weight: 900;
     font-size: 2.875rem;
-    line-height: 1.3rem;
+    line-height: 2.5rem;
     color: #1E212C;
 }
 
@@ -60,6 +60,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     background: $btn-gradient;
     border-radius: 0.25rem;
     color: #fff;
+    border: none;
 }
 
 @mixin paragraph-20 {
@@ -74,9 +75,9 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
 @mixin paragraph-14 {
     font-family: $font-lato;
     font-style: normal;
-    font-weight: bold;
-    font-size: 0.87rem;
-    line-height: 150%;
+    font-weight: normal;
+    font-size: 16px;
+line-height: 160%;
     display: flex;
     align-items: center;
     color: $color-gray-900;
@@ -96,6 +97,8 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
+
+    //navbar
     .main-navbar{
         width: 100%;
         position: absolute;
@@ -210,7 +213,9 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
             }
         }
     }
-    
+    // navbar
+
+    // header
     .main-header{
         background-image: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
         background-size: 120%;
@@ -325,8 +330,9 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                             }
                         }
                         .btn-courses{
+                            @include link-16();
                             @include btn-gradient();
-                            border: none;
+                            
                             width: 12.5rem;
                             height: 3.25rem;
                         }
@@ -356,6 +362,46 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                 }
                 
                 
+            }
+        }
+    }
+    // header
+
+    // who-we-are
+    .who-we-are{
+        padding: 15% 0;
+        .container-fluid{
+            .reasons{
+                padding-left: 5%;
+                flex-direction: column;
+                .sub-title{
+                    @include sub-title-16();
+                    margin-bottom: 0.5rem;
+                }
+                .title{
+                    @include title-46();
+                    margin-bottom: 2.5rem;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        @include paragraph-14();
+                        align-items: start;
+                        margin-bottom: 0.8rem;
+                        img{
+                            margin: 0.5rem;
+                        }
+                    }
+                }
+                .more{
+                    width: 10rem;
+                    height: 2.75rem;
+                    @include link-16();
+                    @include btn-gradient();
+                    margin-top: 3rem;
+                    
+                }
             }
         }
     }

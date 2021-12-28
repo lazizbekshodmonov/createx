@@ -137,6 +137,31 @@
                 }
             }
         }
+        .who-we-are{
+            padding: 15% 0;
+            .container-fluid{
+                .reasons{
+                    margin-top: 3rem;
+                    .sub-title{
+                       text-align: center
+                    }
+                    .title{
+                        text-align: center
+                    }
+                    div{
+                        p{
+                            align-items: start;
+                            margin-bottom: 12px;
+                        }
+                    }
+                    .more{
+                        margin-left: 35%;
+
+                    }
+                    
+                }
+            }
+        }
     }
     
 }

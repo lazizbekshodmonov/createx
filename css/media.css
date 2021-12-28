@@ -129,6 +129,27 @@
   .main .main-header .container .courses-statistics {
     display: none;
   }
+  .main .who-we-are {
+    padding: 15% 0;
+  }
+  .main .who-we-are .container-fluid .reasons {
+    margin-top: 3rem;
+  }
+  .main .who-we-are .container-fluid .reasons .sub-title {
+    text-align: center;
+  }
+  .main .who-we-are .container-fluid .reasons .title {
+    text-align: center;
+  }
+  .main .who-we-are .container-fluid .reasons div p {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-bottom: 12px;
+  }
+  .main .who-we-are .container-fluid .reasons .more {
+    margin-left: 35%;
+  }
 }
 
 @media (max-width: 575.98px) {
