@@ -1,9 +1,22 @@
+@media only screen and (max-width: 1398.98px) {
+  .main .main-header::after {
+    height: 10%;
+  }
+}
+
 @media only screen and (max-width: 1199.98px) {
+  .main .main-header::after {
+    width: 125px;
+    height: 125px;
+  }
   .main .main-header .container .header-container {
     padding: 0;
     padding-top: 10rem;
     margin: 0;
     margin-bottom: 11.5rem;
+  }
+  .main .main-header .container .header-container::before {
+    height: 0;
   }
   .main .main-header .container .header-container .col-sm-12 {
     padding: 0;
@@ -68,6 +81,14 @@
   }
   .main .container .container-fluid .navbar-collapse .navbar-btn .nav-item button {
     margin-bottom: 1rem;
+  }
+  .main .main-header::after {
+    width: 20%;
+    height: 6%;
+  }
+  .main .main-header::after {
+    width: 100px;
+    height: 100px;
   }
   .main .main-header .container {
     margin-bottom: 0;

@@ -104,22 +104,23 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
             top: 120px;
             left: 50px;
             content: '';
-            width: 80px;
-            height: 80px;
+            width: 10%;
+            height: 200%;
             background-image: url(../banner/icons/shapes.png);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 70%;
         }
         &::before{
+            //;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
             position: absolute;
             right: 70px;
             top: 0;
             content: '';
-            width: 80px;
-            height: 80px;
+            width: 10%;
+            height: 200%;
             background-image: url(../banner/icons/uchburchak.png);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 80%;
         }
         
         .container{
@@ -214,9 +215,10 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
         background-image: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
         background-size: 120%;
         &::after{
+            //;;;;;;;;;;;;;;;;;;;;;;;;
             position: absolute;
             left: 0;
-            bottom: -5px;
+            bottom: 0;
             content: '';
             width: 150px;
             height: 150px;
@@ -225,12 +227,13 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
             background-repeat: no-repeat;
         }
         &::before{
+            //;;;;;;;;;;;;;;;;;;;;;;;;;;
             position: absolute;
-            top: 75%;
+            top: 58%;
             right: 0;
             content: '';
-            width: 120px;
-            height: 100px;
+            width: 12%;
+            height: 17% ;
             z-index: 1;
             background-image: url(../banner/icons/dots.png);
             background-repeat: no-repeat;
@@ -243,20 +246,22 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                 padding: 0;
                 padding-top: 10rem;
                 margin: 0;
-                margin-bottom: 11.5rem;
+                margin-bottom: 30%;
                 &::after{
+                    //;;;;;;;;;;;;;;;;;;;;;;;;
                     position: absolute;
                     top: 67%;
                     left: 32%;
                     content: '';
-                    width: 100px;
-                    height: 70px;
+                    width: 10%;
+                    height: 10%;
                     z-index: 1;
                     background-image: url(../banner/icons/yarimaylana.png);
                     background-repeat: no-repeat;
                     background-size: 100%;
                 }
                 &::before{
+                    //;;;;;;;;;;;;;;;;;;;;;;
                     position: absolute;
                     top: 100%;
                     left: 25%;

@@ -15,11 +15,11 @@
   top: 120px;
   left: 50px;
   content: '';
-  width: 80px;
-  height: 80px;
+  width: 10%;
+  height: 200%;
   background-image: url(../banner/icons/shapes.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 70%;
 }
 
 .main .main-navbar::before {
@@ -27,11 +27,11 @@
   right: 70px;
   top: 0;
   content: '';
-  width: 80px;
-  height: 80px;
+  width: 10%;
+  height: 200%;
   background-image: url(../banner/icons/uchburchak.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 80%;
 }
 
 .main .main-navbar .container {
@@ -156,7 +156,7 @@
 .main .main-header::after {
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: 0;
   content: '';
   width: 150px;
   height: 150px;
@@ -167,11 +167,11 @@
 
 .main .main-header::before {
   position: absolute;
-  top: 75%;
+  top: 58%;
   right: 0;
   content: '';
-  width: 120px;
-  height: 100px;
+  width: 12%;
+  height: 17%;
   z-index: 1;
   background-image: url(../banner/icons/dots.png);
   background-repeat: no-repeat;
@@ -187,7 +187,7 @@
   padding: 0;
   padding-top: 10rem;
   margin: 0;
-  margin-bottom: 11.5rem;
+  margin-bottom: 30%;
 }
 
 .main .main-header .container .header-container::after {
@@ -195,8 +195,8 @@
   top: 67%;
   left: 32%;
   content: '';
-  width: 100px;
-  height: 70px;
+  width: 10%;
+  height: 10%;
   z-index: 1;
   background-image: url(../banner/icons/yarimaylana.png);
   background-repeat: no-repeat;
