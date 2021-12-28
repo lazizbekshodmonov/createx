@@ -77,9 +77,12 @@
         }
         .main-header{
             .container{
+                margin-bottom: 0;
+                padding-bottom: 0rem;
                 .row{
-                    padding-top: 10rem;
+                    // padding-top: 10rem;
                     flex-direction: column-reverse;
+                    margin-bottom: 0;
                     .col-sm-12{
                         padding-top: 2rem;
                         .bold-title{

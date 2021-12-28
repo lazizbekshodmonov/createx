@@ -10,6 +10,30 @@
   position: absolute;
 }
 
+.main .main-navbar::after {
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  content: '';
+  width: 80px;
+  height: 80px;
+  background-image: url(../banner/icons/shapes.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main .main-navbar::before {
+  position: absolute;
+  right: 70px;
+  top: 0;
+  content: '';
+  width: 80px;
+  height: 80px;
+  background-image: url(../banner/icons/uchburchak.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .main .main-navbar .container {
   z-index: 999;
   margin: 0 auto;
@@ -121,6 +145,7 @@
 
 .main .main-navbar .container .container-fluid .navbar-collapse .navbar-nav .nav-item .subscribe-btn .img-fluid {
   width: 1.125rem;
+  margin-right: 0.5rem;
 }
 
 .main .main-header {
@@ -128,14 +153,72 @@
   background-size: 120%;
 }
 
+.main .main-header::after {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  content: '';
+  width: 150px;
+  height: 150px;
+  background-image: url(../banner/icons/circles.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+.main .main-header::before {
+  position: absolute;
+  top: 75%;
+  right: 0;
+  content: '';
+  width: 120px;
+  height: 100px;
+  z-index: 1;
+  background-image: url(../banner/icons/dots.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main .main-header .container {
+  padding-bottom: 6rem;
+}
+
 .main .main-header .container .header-container {
+  position: relative;
   padding: 0;
   padding-top: 10rem;
   margin: 0;
   margin-bottom: 11.5rem;
 }
 
+.main .main-header .container .header-container::after {
+  position: absolute;
+  top: 67%;
+  left: 32%;
+  content: '';
+  width: 100px;
+  height: 70px;
+  z-index: 1;
+  background-image: url(../banner/icons/yarimaylana.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main .main-header .container .header-container::before {
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  content: '';
+  width: 100px;
+  height: 70px;
+  z-index: 1;
+  background-image: url(../banner/icons/Vectoryarim.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
 .main .main-header .container .header-container .col-sm-12 {
+  position: relative;
+  z-index: 999;
   padding: 0;
   padding-top: 2rem;
 }
@@ -172,6 +255,11 @@
   margin-right: 1rem;
   border-radius: 50%;
   background-color: #FF3F3A;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .main-header .container .header-container .col-sm-12 .play-showreel .play-icon:hover {
   -webkit-box-shadow: 0 0 0 1rem rgba(255, 63, 58, 0.12);
           box-shadow: 0 0 0 1rem rgba(255, 63, 58, 0.12);
 }
@@ -179,6 +267,7 @@
 .main .main-header .container .header-container .col-sm-12 .play-showreel .play-icon .fas {
   color: #fff;
   font-size: 1.2rem;
+  margin-left: 4px;
 }
 
 .main .main-header .container .header-container .col-sm-12 .bold-title {
@@ -194,6 +283,8 @@
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 0.0625rem;
+  margin-bottom: 3rem;
+  padding-right: 10%;
 }
 
 .main .main-header .container .header-container .col-sm-12 .row .btn-about-us {
@@ -209,6 +300,15 @@
   margin-right: 1rem;
   background-color: transparent;
   color: #FF3F3A;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .main-header .container .header-container .col-sm-12 .row .btn-about-us:hover {
+  background-image: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .main .main-header .container .header-container .col-sm-12 .row .btn-courses {
@@ -222,11 +322,10 @@
 
 .main .main-header .container .courses-statistics {
   margin: 0;
-  margin-bottom: 6rem;
   padding: 0;
 }
 
-.main .main-header .container .courses-statistics .col-lg-3 {
+.main .main-header .container .courses-statistics .list-inline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,17 +336,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
 }
 
-.main .main-header .container .courses-statistics .col-lg-3:nth-child(2) img {
-  margin-left: 1rem !important;
-}
-
-.main .main-header .container .courses-statistics .col-lg-3 img {
-  margin-left: 4rem;
-}
-
-.main .main-header .container .courses-statistics .col-lg-3 div {
+.main .main-header .container .courses-statistics .list-inline .list-inline-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,7 +348,7 @@
           align-items: center;
 }
 
-.main .main-header .container .courses-statistics .col-lg-3 div .statistics-number {
+.main .main-header .container .courses-statistics .list-inline .list-inline-item .statistics-number {
   font-family: "lato", sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -266,7 +358,7 @@
   margin-right: 0.8rem;
 }
 
-.main .main-header .container .courses-statistics .col-lg-3 div .statistics-name {
+.main .main-header .container .courses-statistics .list-inline .list-inline-item .statistics-name {
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;

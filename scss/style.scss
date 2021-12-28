@@ -99,6 +99,29 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     .main-navbar{
         width: 100%;
         position: absolute;
+        &::after{
+            position: absolute;
+            top: 120px;
+            left: 50px;
+            content: '';
+            width: 80px;
+            height: 80px;
+            background-image: url(../banner/icons/shapes.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &::before{
+            position: absolute;
+            right: 70px;
+            top: 0;
+            content: '';
+            width: 80px;
+            height: 80px;
+            background-image: url(../banner/icons/uchburchak.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
         .container{
             // position: absolute;
             z-index: 999;
@@ -175,6 +198,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                                 border: none;
                                 .img-fluid{
                                     width: 1.125rem;
+                                    margin-right: 0.5rem;
                                 }
                             }
     
@@ -187,17 +211,66 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     }
     
     .main-header{
-        
         background-image: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
         background-size: 120%;
-
+        &::after{
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            content: '';
+            width: 150px;
+            height: 150px;
+            background-image: url(../banner/icons/circles.png);
+            background-size: 90%;
+            background-repeat: no-repeat;
+        }
+        &::before{
+            position: absolute;
+            top: 75%;
+            right: 0;
+            content: '';
+            width: 120px;
+            height: 100px;
+            z-index: 1;
+            background-image: url(../banner/icons/dots.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
         .container{
+            padding-bottom: 6rem;
             .header-container{
+                position: relative;
                 padding: 0;
                 padding-top: 10rem;
                 margin: 0;
                 margin-bottom: 11.5rem;
+                &::after{
+                    position: absolute;
+                    top: 67%;
+                    left: 32%;
+                    content: '';
+                    width: 100px;
+                    height: 70px;
+                    z-index: 1;
+                    background-image: url(../banner/icons/yarimaylana.png);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                }
+                &::before{
+                    position: absolute;
+                    top: 100%;
+                    left: 25%;
+                    content: '';
+                    width: 100px;
+                    height: 70px;
+                    z-index: 1;
+                    background-image: url(../banner/icons/Vectoryarim.png);
+                    background-repeat: no-repeat;
+                    background-size: 40%;
+                }
                 .col-sm-12{
+                    position: relative;
+                    z-index: 999;
                     padding: 0;
                     padding-top: 2rem;
                     .play-showreel{
@@ -213,15 +286,21 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                             margin-right: 1rem;
                             border-radius: 50%;
                             background-color: $color-primary;
-                            box-shadow: 0 0 0 1rem rgba(255, 63, 58, 0.12);
+                            transition: 0.5s;
+                            &:hover{
+                                box-shadow: 0 0 0 1rem rgba(255, 63, 58, 0.12);
+                            }
                             .fas{
                                 color: #fff;
                                 font-size: 1.2rem;
+                                margin-left: 4px;
                             }
                         }
                     }
                     .bold-title{
                         @include bold-title-64();
+                        margin-bottom: 3rem;
+                        padding-right: 10%
                     }
                     .row{
                         .btn-about-us{
@@ -233,6 +312,12 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                             margin-right: 1rem;
                             background-color: transparent;
                             color: $color-primary;
+                            transition: 0.5s;
+                            &:hover{
+                                background-image: $btn-gradient;
+                                color: #fff;
+                                transition: 0.5s;
+                            }
                         }
                         .btn-courses{
                             @include btn-gradient();
@@ -245,23 +330,14 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
             }
             .courses-statistics{
                 margin: 0;
-                margin-bottom: 6rem;
                 padding: 0;
-                .col-lg-3{
+                .list-inline{
                     display: flex;
                     padding: 0;
                     align-items: center;
                     justify-content: space-between;
-                    &:nth-child(2){
-                        img{
-                            margin-left: 1rem !important;
-                        }
-                    }
-                    img{
-                    margin-left: 4rem;
-                    
-                    }
-                    div{
+                    margin: 0;
+                    .list-inline-item{
                         display: flex;
                         align-items: center;
                         .statistics-number{
