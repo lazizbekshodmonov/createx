@@ -156,6 +156,9 @@
   html {
     font-size: 10px;
   }
+  .main .main-navbar .navbar {
+    padding: 0 2rem;
+  }
   .container .header-container .col-sm-12 .play-showreel {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

@@ -240,6 +240,7 @@
   color: #1E212C;
   margin-bottom: 4.5rem;
   padding: 0 1rem;
+  font-weight: bold;
 }
 
 .main .main-header .container .header-container .col-sm-12 .play-showreel .play-icon {
@@ -269,7 +270,7 @@
 .main .main-header .container .header-container .col-sm-12 .play-showreel .play-icon .fas {
   color: #fff;
   font-size: 1.2rem;
-  margin-left: 4px;
+  margin-left: 0.25rem;
 }
 
 .main .main-header .container .header-container .col-sm-12 .bold-title {

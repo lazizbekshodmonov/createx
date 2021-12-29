@@ -287,6 +287,7 @@ line-height: 160%;
                         @include paragraph-14();
                         margin-bottom: 4.5rem;
                         padding: 0 1rem;
+                        font-weight: bold;
                         .play-icon{
                             display: flex;
                             justify-content: center;
@@ -303,7 +304,7 @@ line-height: 160%;
                             .fas{
                                 color: #fff;
                                 font-size: 1.2rem;
-                                margin-left: 4px;
+                                margin-left: 0.25rem;
                             }
                         }
                     }
