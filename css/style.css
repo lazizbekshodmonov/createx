@@ -379,6 +379,10 @@
   padding: 15% 0;
 }
 
+.main .who-we-are .container-fluid div:nth-child(1) {
+  padding: 0;
+}
+
 .main .who-we-are .container-fluid .reasons {
   padding-left: 5%;
   -webkit-box-orient: vertical;

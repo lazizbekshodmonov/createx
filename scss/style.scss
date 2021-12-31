@@ -373,6 +373,11 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     .who-we-are{
         padding: 15% 0;
         .container-fluid{
+            div{
+                &:nth-child(1){
+                    padding: 0;
+                }
+            }
             .reasons{
                 padding-left: 5%;
                 flex-direction: column;
@@ -387,6 +392,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                 div{
                     display: flex;
                     flex-direction: column;
+                    
                     p{
                         @include paragraph-14();
                         align-items: start;

@@ -79,6 +79,7 @@
                 }
             }
         }
+        
     }
 }
 
@@ -186,6 +187,38 @@
 }
 @media only screen and (max-width: 767.98px){
     .main{
+        .main-navbar{
+            .navbar{
+                .container-fluid{
+                    .navbar-brand{
+                        .img-fluid{
+                            width: 6rem;
+                        }
+                    }
+                }
+                .nav-toggles{
+                    .navbar-toggler{
+                        .navbar-toggler-icon{
+                            width: 1.2rem;
+                            height: 0.12rem;
+                            margin-bottom: 0.1rem;
+                            &::after{
+                                width: 1.2rem;
+                                height: 0.1rem;
+                                margin-bottom: 0.1rem;
+                                top: 0.3rem;
+                            }
+                            &::before{
+                                width: 1.2rem;
+                                height: 0.12rem;
+                                bottom: 0.3rem;
+                                // margin-bottom: 0.12rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .featured-courses{
             .courses-list{
                 flex-direction: column;
@@ -198,7 +231,7 @@
                         }
                     }
                     .course-info{
-                        padding: 2rem;
+                        padding: 2rem 0.5rem;
                     }
                 }
             }
@@ -216,12 +249,30 @@
                 padding: 0 2rem;
             }
         }
-    }
-    .container{
-        .header-container{
-            .col-sm-12{
-                .play-showreel{
-                    justify-content: center;
+        
+        .main-header{
+            .container{
+                .header-container{
+                    .col-sm-12{
+                        .play-showreel{
+                            justify-content: center;
+                        }
+                        .bold-title{
+                            font-size: 3rem;
+                        }
+                        .row{
+                            .btn-about-us{
+                                width: 7rem;
+                                height: 3.25rem;
+                                font-size: 0.9rem;
+                            }
+                            .btn-courses{
+                                width: 11rem;
+                                height: 3.25rem;
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
                 }
             }
         }
