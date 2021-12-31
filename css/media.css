@@ -88,6 +88,7 @@
   }
   .main .main-navbar .container .container-fluid .navbar-collapse {
     background-color: #fff;
+    padding: 1rem;
   }
   .main .main-navbar .container .container-fluid .navbar-collapse .navbar-btn {
     display: -webkit-box;
