@@ -87,20 +87,29 @@
 @media only screen and (max-width: 991.98px) {
     
     .main{
-        .container{
-            .container-fluid{
-                .navbar-collapse{
-                    background-color: #fff;
-                    .navbar-btn{
+        .main-navbar{
+            .container{
+                .container-fluid{
+                    .nav-toggles{
                         display: flex;
-                        flex-direction: column-reverse;
-                        .nav-item{
-                            .subscribe-btn{
-                                justify-content: start;
-                                padding: 0;
-                            }
-                            button{
-                                margin-bottom: 1rem;
+                        align-items: center;
+                        .get-consultation-btn{
+                            display: flex;
+                        }
+                    }
+                    .navbar-collapse{
+                        background-color: #fff;
+                        .navbar-btn{
+                            display: flex;
+                            flex-direction: column-reverse;
+                            .nav-item{
+                                .subscribe-btn{
+                                    justify-content: start;
+                                    padding: 0;
+                                }
+                                button{
+                                    margin-bottom: 1rem;
+                                }
                             }
                         }
                     }
@@ -190,33 +199,38 @@
         .main-navbar{
             .navbar{
                 .container-fluid{
+                    
                     .navbar-brand{
                         .img-fluid{
                             width: 6rem;
                         }
                     }
-                }
-                .nav-toggles{
-                    .navbar-toggler{
-                        .navbar-toggler-icon{
-                            width: 1.2rem;
-                            height: 0.12rem;
-                            margin-bottom: 0.1rem;
-                            &::after{
-                                width: 1.2rem;
-                                height: 0.1rem;
-                                margin-bottom: 0.1rem;
-                                top: 0.3rem;
-                            }
-                            &::before{
+                    .nav-toggles{
+                        .get-consultation-btn{
+                            display: none;
+                        }
+                        .navbar-toggler{
+                            .navbar-toggler-icon{
                                 width: 1.2rem;
                                 height: 0.12rem;
-                                bottom: 0.3rem;
-                                // margin-bottom: 0.12rem;
+                                margin-bottom: 0.1rem;
+                                &::after{
+                                    width: 1.2rem;
+                                    height: 0.1rem;
+                                    margin-bottom: 0.1rem;
+                                    top: 0.3rem;
+                                }
+                                &::before{
+                                    width: 1.2rem;
+                                    height: 0.12rem;
+                                    bottom: 0.3rem;
+                                    // margin-bottom: 0.12rem;
+                                }
                             }
                         }
                     }
                 }
+                
             }
         }
         .featured-courses{
@@ -246,7 +260,7 @@
     .main{
         .main-navbar{
             .navbar{
-                padding: 0 2rem;
+                padding: 0 1rem;
             }
         }
         
@@ -258,7 +272,7 @@
                             justify-content: center;
                         }
                         .bold-title{
-                            font-size: 3rem;
+                            font-size: 2rem;
                         }
                         .row{
                             .btn-about-us{

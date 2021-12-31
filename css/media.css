@@ -73,10 +73,23 @@
 }
 
 @media only screen and (max-width: 991.98px) {
-  .main .container .container-fluid .navbar-collapse {
+  .main .main-navbar .container .container-fluid .nav-toggles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .main-navbar .container .container-fluid .nav-toggles .get-consultation-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .main-navbar .container .container-fluid .navbar-collapse {
     background-color: #fff;
   }
-  .main .container .container-fluid .navbar-collapse .navbar-btn {
+  .main .main-navbar .container .container-fluid .navbar-collapse .navbar-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -85,13 +98,13 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .main .container .container-fluid .navbar-collapse .navbar-btn .nav-item .subscribe-btn {
+  .main .main-navbar .container .container-fluid .navbar-collapse .navbar-btn .nav-item .subscribe-btn {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
     padding: 0;
   }
-  .main .container .container-fluid .navbar-collapse .navbar-btn .nav-item button {
+  .main .main-navbar .container .container-fluid .navbar-collapse .navbar-btn .nav-item button {
     margin-bottom: 1rem;
   }
   .main .main-header::after {
@@ -173,18 +186,21 @@
   .main .main-navbar .navbar .container-fluid .navbar-brand .img-fluid {
     width: 6rem;
   }
-  .main .main-navbar .navbar .nav-toggles .navbar-toggler .navbar-toggler-icon {
+  .main .main-navbar .navbar .container-fluid .nav-toggles .get-consultation-btn {
+    display: none;
+  }
+  .main .main-navbar .navbar .container-fluid .nav-toggles .navbar-toggler .navbar-toggler-icon {
     width: 1.2rem;
     height: 0.12rem;
     margin-bottom: 0.1rem;
   }
-  .main .main-navbar .navbar .nav-toggles .navbar-toggler .navbar-toggler-icon::after {
+  .main .main-navbar .navbar .container-fluid .nav-toggles .navbar-toggler .navbar-toggler-icon::after {
     width: 1.2rem;
     height: 0.1rem;
     margin-bottom: 0.1rem;
     top: 0.3rem;
   }
-  .main .main-navbar .navbar .nav-toggles .navbar-toggler .navbar-toggler-icon::before {
+  .main .main-navbar .navbar .container-fluid .nav-toggles .navbar-toggler .navbar-toggler-icon::before {
     width: 1.2rem;
     height: 0.12rem;
     bottom: 0.3rem;
@@ -212,7 +228,7 @@
 
 @media (max-width: 575.98px) {
   .main .main-navbar .navbar {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
   .main .main-header .container .header-container .col-sm-12 .play-showreel {
     -webkit-box-pack: center;
@@ -220,7 +236,7 @@
             justify-content: center;
   }
   .main .main-header .container .header-container .col-sm-12 .bold-title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .main .main-header .container .header-container .col-sm-12 .row .btn-about-us {
     width: 7rem;
