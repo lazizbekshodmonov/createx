@@ -10,61 +10,76 @@
 // Large devices (desktops, less than 1200px)
 @media only screen and (max-width: 1199.98px) {
     .main{
-    .main-header{
-        &::after{
-            width: 125px;
-            height: 125px;
-        }
-        .container{
-            .header-container{
-                padding: 0;
-                padding-top: 10rem;
-                margin: 0;
-                margin-bottom: 11.5rem;
-                &::before{
-                    height: 0;
-                }
-                .col-sm-12{
+        .main-header{
+            &::after{
+                width: 125px;
+                height: 125px;
+            }
+            .container{
+                .header-container{
                     padding: 0;
-                    padding-top: 2rem;
-                    
-                    
-                    .bold-title{
-                        font-size: 3.5rem;
+                    padding-top: 10rem;
+                    margin: 0;
+                    margin-bottom: 11.5rem;
+                    &::before{
+                        height: 0;
                     }
+                    .col-sm-12{
+                        padding: 0;
+                        padding-top: 2rem;
+                        
+                        
+                        .bold-title{
+                            font-size: 3.5rem;
+                        }
+                        
+                    }
+                }
+                    
                     
                 }
             }
-                
-                
-            }
-        }
-        .courses-statistics{
-            .col-lg-3{
-                display: flex;
-                padding: 0;
-                align-items: center;
-                justify-content: space-between;
-                &:nth-child(2){
-                    img{
-                        margin-left: 1rem !important;
-                    }
-                }
-                img{
-                margin-left: 4rem;
-                }
-                div{
+            .courses-statistics{
+                .col-lg-3{
                     display: flex;
+                    padding: 0;
                     align-items: center;
+                    justify-content: space-between;
+                    &:nth-child(2){
+                        img{
+                            margin-left: 1rem !important;
+                        }
+                    }
+                    img{
+                    margin-left: 4rem;
+                    }
+                    div{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        .statistics-number{
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        
+        .featured-courses{
+            .courses-list{
+                .courses-item{
                     flex-direction: column;
-                    .statistics-number{
-                        margin-bottom: 1rem;
+                    .course-img{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .course-info{
+                        padding: 2rem;
                     }
                 }
             }
         }
     }
-    
 }
 
 // Medium devices (tablets, less than 992px)
@@ -110,6 +125,9 @@
                     margin-bottom: 0;
                     .col-sm-12{
                         padding-top: 2rem;
+                        .play-showreel{
+                            justify-content: center;
+                        }
                         .bold-title{
                             text-align: center;
                         }
@@ -162,15 +180,36 @@
                 }
             }
         }
+        
     }
     
 }
-
+@media only screen and (max-width: 767.98px){
+    .main{
+        .featured-courses{
+            .courses-list{
+                flex-direction: column;
+                .courses-item{
+                    flex-direction: column;
+                    width: 100%;
+                    .course-img{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .course-info{
+                        padding: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    html{
-        font-size: 10px;
-    }
+    // html{
+    //     font-size: 10px;
+    // }
     .main{
         .main-navbar{
             .navbar{
@@ -190,9 +229,9 @@
 }
 
 @media (max-width: 479.98px) {
-    html{
-        font-size: 8px;
-    }
+    // html{
+    //     font-size: 8px;
+    // }
     
     .container{
         .row{

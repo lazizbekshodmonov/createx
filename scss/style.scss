@@ -49,7 +49,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
 
 @mixin link-16 {
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 1rem;
     line-height: 160%;
     color: #424551;
@@ -76,10 +76,8 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     font-family: $font-lato;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-line-height: 160%;
-    display: flex;
-    align-items: center;
+    font-size: 0.875rem;
+    line-height: 160%;
     color: $color-gray-900;
 }
 @mixin lear-name-20 {
@@ -137,6 +135,7 @@ line-height: 160%;
                 .navbar-brand{
                     .img-fluid{
                         width: 8rem;
+                        margin-bottom: 0.25rem;
                     }
                 }
                 .get-consultation-btn{
@@ -196,7 +195,7 @@ line-height: 160%;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                width: 10rem;
+                                width: 11rem;
                                 height: 3.25rem;
                                 background-color: transparent;
                                 border: none;
@@ -234,7 +233,7 @@ line-height: 160%;
         &::before{
             //;;;;;;;;;;;;;;;;;;;;;;;;;;
             position: absolute;
-            top: 58%;
+            top: 28%;
             right: 0;
             content: '';
             width: 12%;
@@ -288,6 +287,8 @@ line-height: 160%;
                         margin-bottom: 4.5rem;
                         padding: 0 1rem;
                         font-weight: bold;
+                        display: flex;
+                        align-items: center;
                         .play-icon{
                             display: flex;
                             justify-content: center;
@@ -406,6 +407,95 @@ line-height: 160%;
             }
         }
     }
+    // who-we-are
 
+    // featured courses
+    .featured-courses{
+        padding: 0;
+        .courses-list{
+            margin: 0;
+            margin-bottom: 1.875rem;
+            padding: 0 1.5rem;
+
+            .courses-item{
+                display: flex;
+                justify-content: flex-start;
+                background: #FFFFFF;
+                border: 1px solid #E5E8ED;
+                box-sizing: border-box;
+                box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+                border-radius: 4px;
+                padding: 0;
+                // margin-right: 0.5rem;
+                margin-bottom: 2rem;
+                width: 49%;
+                overflow: hidden;
+                // margin: 0;
+                &:hover{
+                    position: relative;
+                    z-index: 999;
+                    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+                    cursor: pointer;
+                }
+                .course-img{
+                    height: auto;
+                    padding: 0;
+                }
+                .course-info{
+                    padding: 2rem;
+                    padding-bottom: 0;
+                    padding-right: 1rem;
+                    .course-type{
+                        min-width: 5rem;
+                        background-color: $color-suces;
+                        padding: 1px 0.5rem;
+                        @include paragraph-14();
+                        text-align: center;
+                        color: #fff;
+                        margin: 0;
+                        margin-bottom: 1.25rem;
+                        padding: 1px 0.5rem;
+                        border: none;
+                        border-radius: 0.25rem;                 
+                    }
+                    .color-info{
+                        background-color: $color-info
+                    }
+                    .color-warning{
+                        background-color: $color-warning
+                    }
+                    .color-red-magenta{
+                        background-color: $color-red-magenta
+                    }
+                    .course-name{
+                        @include lear-name-20();
+                        text-align: start;
+                        margin-bottom: 1.25rem;
+                    }
+                    .course-owner{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        font-family: $font-lato;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 1.125rem;
+                        line-height: 150%;
+                        color: $color-gray-700;
+                        .course-price{
+                            color: $color-danger;
+                            margin-right: 0.5rem;
+                        }
+                        .tree{
+                            width: 2px;
+                            height: 1rem;
+                            background-color: $color-gray-700;
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
