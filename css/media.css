@@ -211,6 +211,9 @@
     height: 0.12rem;
     bottom: 0.3rem;
   }
+  .main .who-we-are {
+    margin-bottom: 3rem;
+  }
   .main .who-we-are .container-fluid {
     margin: 0;
   }
@@ -228,6 +231,12 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .main .who-we-are .container-fluid .reasons .title {
+    font-size: 2rem;
+  }
+  .main .who-we-are .container-fluid .reasons .sub-title {
+    font-size: 0.7rem;
   }
   .main .who-we-are .container-fluid .reasons .more {
     margin: 0;
@@ -256,10 +265,12 @@
   }
   .main .featured-courses .courses-list .courses-titles .sub-title {
     text-align: center;
+    font-size: 0.7rem;
   }
   .main .featured-courses .courses-list .courses-titles .title {
     text-align: center;
     margin-bottom: 2rem;
+    font-size: 2rem;
   }
   .main .featured-courses .courses-list .courses-btns {
     -webkit-box-align: center;

@@ -80,6 +80,14 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     line-height: 160%;
     color: $color-gray-900;
 }
+@mixin paragraph-16 {
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: $color-gray-800;
+}
 @mixin lear-name-20 {
     font-style: normal;
     font-weight: bold;
@@ -371,7 +379,8 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
 
     // who-we-are
     .who-we-are{
-        padding: 15% 0;
+        padding: 8rem 0;
+
         .container-fluid{
             div{
                 &:nth-child(1){
@@ -418,10 +427,10 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
 
     // featured courses
     .featured-courses{
-        padding: 0;
+        padding: 5rem 0 6.25rem 0;
+
         .courses-list{
             margin: 0;
-            margin-bottom: 1.875rem;
             padding: 0 1.5rem;
             
             .courses-item{
@@ -536,6 +545,72 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                     color: $color-primary;
                     transition: 0.5s;
                     margin-bottom: 3rem;
+                    transition: 1s;
+                    &:hover{
+                        @include btn-gradient();
+                        color: #fff;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+    // featured courses
+
+    // benefits
+    .benefits{
+        padding: 5rem 0;
+        .container-fluid{
+            padding: 0 2rem;
+            box-sizing: border-box;
+            .sub-title{
+                @include sub-title-16();
+                text-align: center;
+                margin-bottom: 0.5rem;
+            }
+            .title{
+                @include title-46();
+                text-align: center;
+                margin-bottom: 3.75rem;
+            }
+            .benefits-sections{
+                padding: 0 1rem;
+                .benefits-item{
+                    @include link-16();
+                    color: $color-gray-600;
+                    height: 2.875rem;
+                    padding: 0;
+                    cursor: pointer;
+                    .fal, .far{
+                        margin-right: 0.5rem;
+                    }
+                    &:hover{
+                        border: 1px solid #FF3F3A;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        color: $color-primary;
+                        
+                    }
+                    &:active{
+                        border: 1px solid #FF3F3A;
+                        color: $color-primary;
+                    }
+                }
+            }
+            .about-tutors{
+                padding: 4.3rem;
+                .tutor-info{
+                    padding-right: 1rem;
+                    .tutor-title{
+                        @include title-46();
+                        font-size: 2rem;
+                        margin-top: 5rem;
+                        margin-bottom: 2rem;
+                    }
+                    .tutor-text{
+                        @include paragraph-16();
+                        
+                    }
                 }
             }
         }

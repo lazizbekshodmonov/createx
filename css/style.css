@@ -376,7 +376,7 @@
 }
 
 .main .who-we-are {
-  padding: 15% 0;
+  padding: 8rem 0;
 }
 
 .main .who-we-are .container-fluid div:nth-child(1) {
@@ -456,12 +456,11 @@
 }
 
 .main .featured-courses {
-  padding: 0;
+  padding: 5rem 0 6.25rem 0;
 }
 
 .main .featured-courses .courses-list {
   margin: 0;
-  margin-bottom: 1.875rem;
   padding: 0 1.5rem;
 }
 
@@ -638,5 +637,113 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-bottom: 3rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main .featured-courses .courses-list .courses-btns .courses-all:hover {
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  border-radius: 0.25rem;
+  color: #fff;
+  border: none;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .benefits {
+  padding: 5rem 0;
+}
+
+.main .benefits .container-fluid {
+  padding: 0 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main .benefits .container-fluid .sub-title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  color: #1E212C;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.main .benefits .container-fluid .title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.875rem;
+  line-height: 2.5rem;
+  color: #1E212C;
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+
+.main .benefits .container-fluid .benefits-sections {
+  padding: 0 1rem;
+}
+
+.main .benefits .container-fluid .benefits-sections .benefits-item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #424551;
+  color: #9A9CA5;
+  height: 2.875rem;
+  padding: 0;
+  cursor: pointer;
+}
+
+.main .benefits .container-fluid .benefits-sections .benefits-item .fal, .main .benefits .container-fluid .benefits-sections .benefits-item .far {
+  margin-right: 0.5rem;
+}
+
+.main .benefits .container-fluid .benefits-sections .benefits-item:hover {
+  border: 1px solid #FF3F3A;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  color: #FF3F3A;
+}
+
+.main .benefits .container-fluid .benefits-sections .benefits-item:active {
+  border: 1px solid #FF3F3A;
+  color: #FF3F3A;
+}
+
+.main .benefits .container-fluid .about-tutors {
+  padding: 4.3rem;
+}
+
+.main .benefits .container-fluid .about-tutors .tutor-info {
+  padding-right: 1rem;
+}
+
+.main .benefits .container-fluid .about-tutors .tutor-info .tutor-title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.875rem;
+  line-height: 2.5rem;
+  color: #1E212C;
+  font-size: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.main .benefits .container-fluid .about-tutors .tutor-info .tutor-text {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
 }
 /*# sourceMappingURL=style.css.map */

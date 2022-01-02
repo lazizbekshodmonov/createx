@@ -247,6 +247,7 @@
             }
         }
         .who-we-are{
+            margin-bottom: 3rem;
             .container-fluid{
                 margin: 0;
                 .reasons{
@@ -254,6 +255,12 @@
                     justify-content: center;
                     flex-direction: column;
                     align-items: center;
+                    .title{
+                        font-size: 2rem;
+                    }
+                    .sub-title{
+                        font-size: 0.7rem;
+                    }
                     .more{
                         margin: 0;
                     }
@@ -279,10 +286,12 @@
                     margin-bottom: 0.5rem;
                     .sub-title{
                         text-align: center;
+                        font-size: 0.7rem;
                     }
                     .title{
                         text-align: center;
                         margin-bottom: 2rem;
+                        font-size: 2rem;
                     }
                 }
                 .courses-btns{
