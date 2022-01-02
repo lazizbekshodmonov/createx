@@ -262,9 +262,16 @@
                 }
                 .courses-titles{
                     margin-bottom: 0.5rem;
+                    .sub-title{
+                        text-align: center;
+                    }
                     .title{
+                        text-align: center;
                         margin-bottom: 2rem;
                     }
+                }
+                .courses-btns{
+                    align-items: center;
                 }
             }
         }
@@ -316,13 +323,32 @@
     //     font-size: 8px;
     // }
     
-    .container{
-        .row{
-            padding-top: 10rem;
-            .col-sm-12{
-                padding-top: 2rem;
-                .play-showreel{
-                    justify-content: center;
+    .main{
+        .main-header{
+            .container{
+                .row{
+                    .col-sm-12{
+                        padding-top: 2rem;
+                        .play-showreel{
+                            justify-content: center;
+                        }
+                        .bold-title{
+                            padding-right: 0;
+                        }
+                        .row{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0;
+                            margin-bottom: 2rem;
+                            .btn-about-us{
+                                margin: 0;
+                                margin-bottom: 1rem;
+                                width: 12.5rem;
+                            }
+                        }
+                    }
                 }
             }
         }
