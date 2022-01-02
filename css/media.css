@@ -211,6 +211,9 @@
     height: 0.12rem;
     bottom: 0.3rem;
   }
+  .main .who-we-are .container-fluid {
+    margin: 0;
+  }
   .main .who-we-are .container-fluid .reasons {
     display: -webkit-box;
     display: -ms-flexbox;
