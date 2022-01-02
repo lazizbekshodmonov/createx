@@ -392,6 +392,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                 div{
                     display: flex;
                     flex-direction: column;
+                    // align-items: start;
                     
                     p{
                         @include paragraph-14();
@@ -422,7 +423,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
             margin: 0;
             margin-bottom: 1.875rem;
             padding: 0 1.5rem;
-
+            
             .courses-item{
                 display: flex;
                 justify-content: flex-start;
@@ -474,6 +475,8 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                         background-color: $color-red-magenta
                     }
                     .course-name{
+                        display: block;
+                        height: 3rem;
                         @include lear-name-20();
                         text-align: start;
                         margin-bottom: 1.25rem;
@@ -499,6 +502,40 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                             margin-right: 0.5rem;
                         }
                     }
+                }
+            }
+            .courses-titles{
+                box-shadow: none !important;
+                border: none !important;
+                flex-direction: column;
+                padding: 0;
+                .sub-title{
+                    @include sub-title-16();
+                    margin-bottom: 0.5rem;
+                }
+                .title{
+                    @include title-46();
+                    margin-bottom: 3rem;
+                }
+            }
+            .courses-btns{
+                position: relative;
+                padding: 0;
+                border: none;
+                box-shadow: none !important;
+                justify-content: flex-end;
+                
+                .courses-all{
+                    bottom: 3.75rem;
+                    @include link-16();
+                    width: 10rem;
+                    height: 3.25rem;
+                    border: 0.1rem solid $color-red-magenta;
+                    border-radius: 0.25rem;
+                    background-color: transparent;
+                    color: $color-primary;
+                    transition: 0.5s;
+                    margin-bottom: 3rem;
                 }
             }
         }

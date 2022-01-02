@@ -70,6 +70,21 @@
   .main .featured-courses .courses-list .courses-item .course-info {
     padding: 2rem;
   }
+  .main .featured-courses .courses-list .courses-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .main .featured-courses .courses-list .courses-btns .courses-all {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -147,16 +162,6 @@
             flex-direction: row;
     margin-bottom: 6.5rem;
   }
-  .main .main-header .container .row .col-sm-12 .row .col-5 {
-    width: 13rem;
-    height: 5rem;
-    font-size: 1.7rem;
-  }
-  .main .main-header .container .row .col-sm-12 .row .col-7 {
-    width: 18rem;
-    height: 5rem;
-    font-size: 1.7rem;
-  }
   .main .main-header .container .courses-statistics {
     display: none;
   }
@@ -225,6 +230,12 @@
   .main .featured-courses .courses-list .courses-item .course-info {
     padding: 2rem 0.5rem;
   }
+  .main .featured-courses .courses-list .courses-titles {
+    margin-bottom: 0.5rem;
+  }
+  .main .featured-courses .courses-list .courses-titles .title {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -240,12 +251,12 @@
     font-size: 2rem;
   }
   .main .main-header .container .header-container .col-sm-12 .row .btn-about-us {
-    width: 7rem;
+    width: 10rem;
     height: 3.25rem;
     font-size: 0.9rem;
   }
   .main .main-header .container .header-container .col-sm-12 .row .btn-courses {
-    width: 11rem;
+    width: 12.5rem;
     height: 3.25rem;
     font-size: 0.9rem;
   }

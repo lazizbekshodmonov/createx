@@ -536,6 +536,8 @@
 }
 
 .main .featured-courses .courses-list .courses-item .course-info .course-name {
+  display: block;
+  height: 3rem;
   font-style: normal;
   font-weight: bold;
   font-size: 1.25rem;
@@ -574,5 +576,67 @@
   height: 1rem;
   background-color: #787A80;
   margin-right: 0.5rem;
+}
+
+.main .featured-courses .courses-list .courses-titles {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+
+.main .featured-courses .courses-list .courses-titles .sub-title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  color: #1E212C;
+  margin-bottom: 0.5rem;
+}
+
+.main .featured-courses .courses-list .courses-titles .title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.875rem;
+  line-height: 2.5rem;
+  color: #1E212C;
+  margin-bottom: 3rem;
+}
+
+.main .featured-courses .courses-list .courses-btns {
+  position: relative;
+  padding: 0;
+  border: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main .featured-courses .courses-list .courses-btns .courses-all {
+  bottom: 3.75rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #424551;
+  width: 10rem;
+  height: 3.25rem;
+  border: 0.1rem solid #F52F6E;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: #FF3F3A;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -75,8 +75,19 @@
                     }
                     .course-info{
                         padding: 2rem;
+                        
                     }
                 }
+                .courses-btns{
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-start;
+                    .courses-all{
+                        margin: 0;
+                        margin-bottom: 2rem;
+                    }
+                }
+
             }
         }
         
@@ -146,16 +157,7 @@
                             justify-content: space-around;
                             flex-direction: row;
                             margin-bottom: 6.5rem;
-                            .col-5{
-                                width: 13rem;
-                                height: 5rem;
-                                font-size: 1.7rem;
-                            }
-                            .col-7{
-                                width: 18rem;
-                                height: 5rem;
-                                font-size: 1.7rem;
-                            }
+                            
                         }
                     }
                 }
@@ -191,6 +193,15 @@
                 }
             }
         }
+        // .featured-courses{
+        //     .courses-list{
+        //         .courses-item{
+        //             .courses-name{
+        //             }
+        //         }
+        //     }
+        // }
+        
         
     }
     
@@ -249,6 +260,12 @@
                         padding: 2rem 0.5rem;
                     }
                 }
+                .courses-titles{
+                    margin-bottom: 0.5rem;
+                    .title{
+                        margin-bottom: 2rem;
+                    }
+                }
             }
         }
     }
@@ -277,12 +294,12 @@
                         }
                         .row{
                             .btn-about-us{
-                                width: 7rem;
+                                width: 10rem;
                                 height: 3.25rem;
                                 font-size: 0.9rem;
                             }
                             .btn-courses{
-                                width: 11rem;
+                                width: 12.5rem;
                                 height: 3.25rem;
                                 font-size: 0.9rem;
                             }
