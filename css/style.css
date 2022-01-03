@@ -3,6 +3,7 @@
   max-width: 1920px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
 .main .main-navbar {
@@ -154,31 +155,19 @@
 .main .main-header {
   background-image: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
   background-size: 120%;
+  position: relative;
 }
 
 .main .main-header::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -6px;
   content: '';
   width: 150px;
   height: 150px;
   background-image: url(../banner/icons/circles.png);
   background-size: 90%;
   background-repeat: no-repeat;
-}
-
-.main .main-header::before {
-  position: absolute;
-  top: 18%;
-  right: 0;
-  content: '';
-  width: 12%;
-  height: 17%;
-  z-index: 1;
-  background-image: url(../banner/icons/dots.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .main .main-header .container {
@@ -217,6 +206,23 @@
   background-image: url(../banner/icons/Vectoryarim.png);
   background-repeat: no-repeat;
   background-size: 40%;
+}
+
+.main .main-header .container .header-container .banner-img {
+  position: relative;
+}
+
+.main .main-header .container .header-container .banner-img::before {
+  position: absolute;
+  top: 100%;
+  right: -27%;
+  content: '';
+  width: 28%;
+  height: 28%;
+  z-index: 1;
+  background-image: url(../banner/icons/dots.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .main .main-header .container .header-container .col-sm-12 {
@@ -376,6 +382,31 @@
 
 .main .who-we-are {
   padding: 8rem 0;
+  position: relative;
+}
+
+.main .who-we-are::after {
+  position: absolute;
+  top: 25%;
+  left: -19%;
+  width: 20%;
+  height: 30%;
+  content: '';
+  background-image: url(../why-createx/icons/dots.svg);
+  background-size: 43%;
+  background-repeat: no-repeat;
+}
+
+.main .who-we-are::before {
+  position: absolute;
+  right: -30%;
+  top: 49%;
+  content: '';
+  width: 20%;
+  height: 35%;
+  background-image: url(../why-createx/icons/circles.svg);
+  background-size: 43%;
+  background-repeat: no-repeat;
 }
 
 .main .who-we-are .container-fluid div:nth-child(1) {

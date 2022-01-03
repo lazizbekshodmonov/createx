@@ -103,7 +103,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
-
+    overflow: hidden;
     //navbar
     .main-navbar{
         width: 100%;
@@ -226,11 +226,12 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     .main-header{
         background-image: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
         background-size: 120%;
+        position: relative;
         &::after{
             //;;;;;;;;;;;;;;;;;;;;;;;;
             position: absolute;
             left: 0;
-            bottom: 0;
+            bottom: -6px;
             content: '';
             width: 150px;
             height: 150px;
@@ -238,19 +239,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
             background-size: 90%;
             background-repeat: no-repeat;
         }
-        &::before{
-            //;;;;;;;;;;;;;;;;;;;;;;;;;;
-            position: absolute;
-            top: 18%;
-            right: 0;
-            content: '';
-            width: 12%;
-            height: 17% ;
-            z-index: 1;
-            background-image: url(../banner/icons/dots.png);
-            background-repeat: no-repeat;
-            background-size: 100%;
-        }
+        
         .container{
             padding-bottom: 6rem;
             .header-container{
@@ -285,11 +274,28 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                     background-repeat: no-repeat;
                     background-size: 40%;
                 }
+                .banner-img{
+                    position: relative;
+                        &::before{
+                            //;;;;;;;;;;;;;;;;;;;;;;;;;;
+                            position: absolute;
+                            top: 100%;
+                            right: -27%;
+                            content: '';
+                            width: 28%;
+                            height: 28% ;
+                            z-index: 1;
+                            background-image: url(../banner/icons/dots.png);
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                        }
+                }
                 .col-sm-12{
                     position: relative;
                     z-index: 999;
                     padding: 0;
                     padding-top: 2rem;
+                    
                     .play-showreel{
                         @include paragraph-14();
                         margin-bottom: 4.5rem;
@@ -380,7 +386,29 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     // who-we-are
     .who-we-are{
         padding: 8rem 0;
-
+        position: relative;
+        &::after{
+            position: absolute;
+            top: 25%;
+            left: -19%;
+            width: 20%;
+            height: 30%;
+            content: '';
+            background-image: url(../why-createx/icons/dots.svg);
+            background-size: 43%;
+            background-repeat: no-repeat;
+        }
+        &::before{
+            position: absolute;
+            right: -30%;
+            top: 49%;
+            content: '';
+            width: 20%;
+            height: 35%;
+            background-image: url(../why-createx/icons/circles.svg);
+            background-size: 43%;
+            background-repeat: no-repeat;
+        }
         .container-fluid{
             div{
                 &:nth-child(1){
