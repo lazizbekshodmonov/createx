@@ -194,14 +194,42 @@
                 }
             }
         }
-        // .featured-courses{
-        //     .courses-list{
-        //         .courses-item{
-        //             .courses-name{
-        //             }
-        //         }
-        //     }
-        // }
+        // benefits
+        .benefits{
+            padding: 3rem 0;
+            .container-fluid{
+                padding: 0 0.5rem;
+                .title{
+                    font-size: 2rem;
+                }
+                .sub-title{
+                    font-size: 0.7rem;
+                }
+                .benefits-sections{
+                    padding: 0 0.5rem;
+                    display: flex;
+                    justify-content: center;
+                    .benefits-item{
+                        font-size: 0.5rem;
+
+                    }
+                    .display-mobile{
+                        display: none !important;
+                    }
+                }
+                .about-tutors{
+                    padding:1.5rem;
+                    flex-direction: column-reverse;
+                    // padding: 0;
+                    .tutor-info{
+                        padding: 0;
+                        .tutor-title{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
         
         
     }
@@ -331,12 +359,26 @@
                             }
                             .btn-courses{
                                 width: 12.5rem;
-                                height: 3.25rem;
-                                font-size: 0.9rem;
                             }
                         }
                     }
                 }
+            }
+        }
+        .benefits{
+            .container-fluid{
+                
+                .benefits-sections{
+                    .benefits-item{
+                        font-size: 0.5rem;
+                        height: auto;
+                        width: 50%;
+                        height: 2.4rem;
+                        
+                    }
+                    
+                }
+                
             }
         }
     }

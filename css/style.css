@@ -170,7 +170,7 @@
 
 .main .main-header::before {
   position: absolute;
-  top: 28%;
+  top: 18%;
   right: 0;
   content: '';
   width: 12%;
@@ -288,7 +288,6 @@
           align-items: center;
   letter-spacing: 0.0625rem;
   margin-bottom: 3rem;
-  padding-right: 10%;
 }
 
 .main .main-header .container .header-container .col-sm-12 .row .btn-about-us {

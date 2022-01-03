@@ -241,7 +241,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
         &::before{
             //;;;;;;;;;;;;;;;;;;;;;;;;;;
             position: absolute;
-            top: 28%;
+            top: 18%;
             right: 0;
             content: '';
             width: 12%;
@@ -320,7 +320,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                     .bold-title{
                         @include bold-title-64();
                         margin-bottom: 3rem;
-                        padding-right: 10%
+                        // padding-right: 10%
                     }
                     .row{
                         .btn-about-us{
@@ -616,4 +616,3 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
         }
     }
 }
-

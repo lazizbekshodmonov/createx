@@ -186,6 +186,46 @@
   .main .who-we-are .container-fluid .reasons .more {
     margin-left: 35%;
   }
+  .main .benefits {
+    padding: 3rem 0;
+  }
+  .main .benefits .container-fluid {
+    padding: 0 0.5rem;
+  }
+  .main .benefits .container-fluid .title {
+    font-size: 2rem;
+  }
+  .main .benefits .container-fluid .sub-title {
+    font-size: 0.7rem;
+  }
+  .main .benefits .container-fluid .benefits-sections {
+    padding: 0 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main .benefits .container-fluid .benefits-sections .benefits-item {
+    font-size: 0.5rem;
+  }
+  .main .benefits .container-fluid .benefits-sections .display-mobile {
+    display: none !important;
+  }
+  .main .benefits .container-fluid .about-tutors {
+    padding: 1.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main .benefits .container-fluid .about-tutors .tutor-info {
+    padding: 0;
+  }
+  .main .benefits .container-fluid .about-tutors .tutor-info .tutor-title {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -298,8 +338,12 @@
   }
   .main .main-header .container .header-container .col-sm-12 .row .btn-courses {
     width: 12.5rem;
-    height: 3.25rem;
-    font-size: 0.9rem;
+  }
+  .main .benefits .container-fluid .benefits-sections .benefits-item {
+    font-size: 0.5rem;
+    height: auto;
+    width: 50%;
+    height: 2.4rem;
   }
 }
 
