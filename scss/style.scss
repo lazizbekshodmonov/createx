@@ -108,6 +108,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     .main-navbar{
         width: 100%;
         position: absolute;
+        z-index: 999;
         &::after{
             position: absolute;
             top: 120px;
@@ -121,7 +122,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
         }
         &::before{
             //;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-            position: absolute;
+            // position: absolute;
             right: 70px;
             top: 0;
             content: '';
@@ -185,6 +186,8 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                     }
                 }
                 .navbar-collapse{
+                    position: relative;
+                    z-index: 999;
                     .navbar-nav{
                         .nav-item{
                             .nav-link{
@@ -227,6 +230,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
         background-image: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
         background-size: 120%;
         position: relative;
+        z-index: 1;
         &::after{
             //;;;;;;;;;;;;;;;;;;;;;;;;
             position: absolute;
@@ -475,11 +479,13 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                 width: 49%;
                 overflow: hidden;
                 // margin: 0;
+                transition: 0.5s;
                 &:hover{
                     position: relative;
                     z-index: 999;
                     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
                     cursor: pointer;
+                    transition: 0.5s;
                 }
                 .course-img{
                     height: auto;
@@ -626,7 +632,7 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                 }
             }
             .about-tutors{
-                padding: 4.3rem;
+                padding: 4.3rem 0;
                 .tutor-info{
                     padding-right: 1rem;
                     .tutor-title{
@@ -634,10 +640,109 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                         font-size: 2rem;
                         margin-top: 5rem;
                         margin-bottom: 2rem;
+                        
                     }
                     .tutor-text{
                         @include paragraph-16();
                         
+                    }
+                }
+            }
+        }
+    }
+    // benefits
+
+    // our events
+    .events{
+        padding: 5rem 0;
+        background-image: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+        .events-container{
+            .sub-title{
+                @include sub-title-16();
+                text-align: center;
+            }
+            .title{
+                @include title-46();
+                text-align: center;
+                margin-bottom: 3.75rem;
+            }
+            .events-container-item{
+                padding: 1rem;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+                background-color: #fff;
+                border-radius: 4px;
+                transition: 0.5s;
+                &:hover{
+                    position:relative;
+                    z-index: 999;
+                    box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+                    transition: 0.5s;
+                }
+                .data-number{
+                    display: flex;
+                    align-items: center;
+                    .data-number-item{
+                        font-family: $font-lato;
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 48px;
+                        line-height: 130%;
+                        letter-spacing: 1px;
+                        color: $color-primary;
+                        margin: 0;
+                    }
+                }
+                .data-month{
+                    // width: 100px;
+                    padding: 1.25rem 0.5rem;
+                    .data-month-name{
+                        @include lear-name-20();
+                        color: $color-gray-900;
+                        text-align: start;
+                        margin-bottom: 4px;
+                    }
+                    .data-month-time{
+                        @include paragraph-16();
+                        color: $color-gray-700;
+                        margin: 0;
+                    }
+                }
+                .master-class{
+                    padding: 1.25rem 0.5rem;
+                    .master-class-name{
+                        @include lear-name-20();
+                        color: $color-gray-900;
+                        text-align: start;
+                        margin-bottom: 4px;
+                    }
+                    .master-class-shape{
+                        @include paragraph-16();
+                        color: $color-gray-700;
+                        margin: 0;
+                    }
+                }
+                .master-class-more{
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    .master-class-more-btn{
+                        min-width: 4rem;
+                        height: 2.75rem;
+                        padding: 0.5rem 2rem;
+                        border-radius: 4px;
+                        background-color: transparent;
+                        border: 1px solid $color-primary;
+                        @include paragraph-14();
+                        color: $color-primary;
+                        font-weight: 700;
+                        transition: 0.5s;
+                        &:hover{
+                            background-image: $btn-gradient;
+                            color: #fff;
+                            transition: 0.5s;
+                        }
                     }
                 }
             }

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1398.98px){
+@media only screen and (max-width: 1400px){
     .main{
         .main-header{
             &::after{
@@ -225,12 +225,45 @@
                         padding: 0;
                         .tutor-title{
                             text-align: center;
+                            font-size: 1.5rem;
                         }
                     }
                 }
             }
         }
-        
+        // benefits
+
+        // events
+        .events{
+            .events-container{
+                .events-container-item{
+                    justify-content: center;
+                    .data-number{
+                        justify-content: center;
+                    }
+                    .data-month{
+                        .data-month-name{
+                            text-align: center;
+                        }
+                        .data-month-time{
+                            text-align: center;
+                        }
+                    }
+                    .master-class{
+                        .master-class-shape{
+                            text-align: center;
+                        }
+                    }
+                    .master-class-more{
+                        justify-content: center;
+                        width: 80%;
+                        .master-class-more-btn{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
         
     }
     

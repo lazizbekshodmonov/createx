@@ -9,6 +9,7 @@
 .main .main-navbar {
   width: 100%;
   position: absolute;
+  z-index: 999;
 }
 
 .main .main-navbar::after {
@@ -24,7 +25,6 @@
 }
 
 .main .main-navbar::before {
-  position: absolute;
   right: 70px;
   top: 0;
   content: '';
@@ -100,6 +100,11 @@
   background-color: #1E212C;
 }
 
+.main .main-navbar .container .container-fluid .navbar-collapse {
+  position: relative;
+  z-index: 999;
+}
+
 .main .main-navbar .container .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-style: normal;
   font-weight: bold;
@@ -156,6 +161,7 @@
   background-image: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
   background-size: 120%;
   position: relative;
+  z-index: 1;
 }
 
 .main .main-header::after {
@@ -512,6 +518,8 @@
   margin-bottom: 2rem;
   width: 49%;
   overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .main .featured-courses .courses-list .courses-item:hover {
@@ -520,6 +528,8 @@
   -webkit-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
           box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .main .featured-courses .courses-list .courses-item .course-img {
@@ -749,7 +759,7 @@
 }
 
 .main .benefits .container-fluid .about-tutors {
-  padding: 4.3rem;
+  padding: 4.3rem 0;
 }
 
 .main .benefits .container-fluid .about-tutors .tutor-info {
@@ -775,5 +785,165 @@
   font-size: 16px;
   line-height: 160%;
   color: #424551;
+}
+
+.main .events {
+  padding: 5rem 0;
+  background-image: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+}
+
+.main .events .events-container .sub-title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  color: #1E212C;
+  text-align: center;
+}
+
+.main .events .events-container .title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.875rem;
+  line-height: 2.5rem;
+  color: #1E212C;
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+
+.main .events .events-container .events-container-item {
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .events .events-container .events-container-item:hover {
+  position: relative;
+  z-index: 999;
+  -webkit-box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+          box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .events .events-container .events-container-item .data-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .events .events-container .events-container-item .data-number .data-number-item {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: #FF3F3A;
+  margin: 0;
+}
+
+.main .events .events-container .events-container-item .data-month {
+  padding: 1.25rem 0.5rem;
+}
+
+.main .events .events-container .events-container-item .data-month .data-month-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 150%;
+  text-align: center;
+  color: #424551;
+  color: #1E212C;
+  text-align: start;
+  margin-bottom: 4px;
+}
+
+.main .events .events-container .events-container-item .data-month .data-month-time {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  color: #787A80;
+  margin: 0;
+}
+
+.main .events .events-container .events-container-item .master-class {
+  padding: 1.25rem 0.5rem;
+}
+
+.main .events .events-container .events-container-item .master-class .master-class-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 150%;
+  text-align: center;
+  color: #424551;
+  color: #1E212C;
+  text-align: start;
+  margin-bottom: 4px;
+}
+
+.main .events .events-container .events-container-item .master-class .master-class-shape {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  color: #787A80;
+  margin: 0;
+}
+
+.main .events .events-container .events-container-item .master-class-more {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main .events .events-container .events-container-item .master-class-more .master-class-more-btn {
+  min-width: 4rem;
+  height: 2.75rem;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #FF3F3A;
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 160%;
+  color: #1E212C;
+  color: #FF3F3A;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .events .events-container .events-container-item .master-class-more .master-class-more-btn:hover {
+  background-image: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=style.css.map */

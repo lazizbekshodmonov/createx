@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1398.98px) {
+@media only screen and (max-width: 1400px) {
   .main .main-header::after {
     height: 10%;
   }
@@ -225,6 +225,35 @@
   }
   .main .benefits .container-fluid .about-tutors .tutor-info .tutor-title {
     text-align: center;
+    font-size: 1.5rem;
+  }
+  .main .events .events-container .events-container-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main .events .events-container .events-container-item .data-number {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main .events .events-container .events-container-item .data-month .data-month-name {
+    text-align: center;
+  }
+  .main .events .events-container .events-container-item .data-month .data-month-time {
+    text-align: center;
+  }
+  .main .events .events-container .events-container-item .master-class .master-class-shape {
+    text-align: center;
+  }
+  .main .events .events-container .events-container-item .master-class-more {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+  }
+  .main .events .events-container .events-container-item .master-class-more .master-class-more-btn {
+    width: 100%;
   }
 }
 
