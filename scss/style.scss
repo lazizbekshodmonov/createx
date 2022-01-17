@@ -619,10 +619,8 @@ $btn-gradient:  linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
                         margin-right: 0.5rem;
                     }
                     &:hover{
-                        border: 1px solid #FF3F3A;
                         box-sizing: border-box;
-                        border-radius: 4px;
-                        color: $color-primary;
+                        color: $color-gray-700;
                         
                     }
                     &:active{

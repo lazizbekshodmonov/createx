@@ -1,0 +1,947 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+.main {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.main .main-navbar {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+}
+
+.main .main-navbar::after {
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  content: '';
+  width: 10%;
+  height: 200%;
+  background-image: url(../banner/icons/shapes.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.main .main-navbar::before {
+  right: 70px;
+  top: 0;
+  content: '';
+  width: 10%;
+  height: 200%;
+  background-image: url(../banner/icons/uchburchak.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.main .main-navbar .container {
+  z-index: 999;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main .main-navbar .container .container-fluid {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.main .main-navbar .container .container-fluid .navbar-brand .img-fluid {
+  width: 8rem;
+  margin-bottom: 0.25rem;
+}
+
+.main .main-navbar .container .container-fluid .get-consultation-btn {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  border-radius: 0.25rem;
+  color: #fff;
+  border: none;
+  width: 12.93rem;
+  height: 3.25rem;
+  border: none;
+}
+
+.main .main-navbar .container .container-fluid .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.main .main-navbar .container .container-fluid .navbar-toggler .navbar-toggler-icon {
+  position: relative;
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #1E212C;
+}
+
+.main .main-navbar .container .container-fluid .navbar-toggler .navbar-toggler-icon::after {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  content: '';
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #1E212C;
+}
+
+.main .main-navbar .container .container-fluid .navbar-toggler .navbar-toggler-icon::before {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  content: '';
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #1E212C;
+}
+
+.main .main-navbar .container .container-fluid .navbar-collapse {
+  position: relative;
+  z-index: 999;
+}
+
+.main .main-navbar .container .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #424551;
+}
+
+.main .main-navbar .container .container-fluid .navbar-collapse .navbar-nav .nav-item .get-consultation-btn {
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  border-radius: 0.25rem;
+  color: #fff;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12.93rem;
+  height: 3.25rem;
+}
+
+.main .main-navbar .container .container-fluid .navbar-collapse .navbar-nav .nav-item .subscribe-btn {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #424551;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11rem;
+  height: 3.25rem;
+  background-color: transparent;
+  border: none;
+}
+
+.main .main-navbar .container .container-fluid .navbar-collapse .navbar-nav .nav-item .subscribe-btn .img-fluid {
+  width: 1.125rem;
+  margin-right: 0.5rem;
+}
+
+.main .main-header {
+  background-image: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+  background-size: 120%;
+  position: relative;
+  z-index: 1;
+}
+
+.main .main-header::after {
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  content: '';
+  width: 150px;
+  height: 150px;
+  background-image: url(../banner/icons/circles.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+.main .main-header .container {
+  padding-bottom: 6rem;
+}
+
+.main .main-header .container .header-container {
+  position: relative;
+  padding: 0;
+  padding-top: 10rem;
+  margin: 0;
+  margin-bottom: 30%;
+}
+
+.main .main-header .container .header-container::after {
+  position: absolute;
+  top: 67%;
+  left: 32%;
+  content: '';
+  width: 10%;
+  height: 10%;
+  z-index: 1;
+  background-image: url(../banner/icons/yarimaylana.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main .main-header .container .header-container::before {
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  content: '';
+  width: 100px;
+  height: 70px;
+  z-index: 1;
+  background-image: url(../banner/icons/Vectoryarim.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.main .main-header .container .header-container .banner-img {
+  position: relative;
+}
+
+.main .main-header .container .header-container .banner-img::before {
+  position: absolute;
+  top: 100%;
+  right: -27%;
+  content: '';
+  width: 28%;
+  height: 28%;
+  z-index: 1;
+  background-image: url(../banner/icons/dots.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main .main-header .container .header-container .col-sm-12 {
+  position: relative;
+  z-index: 999;
+  padding: 0;
+  padding-top: 2rem;
+}
+
+.main .main-header .container .header-container .col-sm-12 .play-showreel {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 160%;
+  color: #1E212C;
+  margin-bottom: 4.5rem;
+  padding: 0 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main-header .container .header-container .col-sm-12 .play-showreel .play-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background-color: #FF3F3A;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .main-header .container .header-container .col-sm-12 .play-showreel .play-icon:hover {
+  -webkit-box-shadow: 0 0 0 1rem rgba(255, 63, 58, 0.12);
+          box-shadow: 0 0 0 1rem rgba(255, 63, 58, 0.12);
+}
+
+.main .main-header .container .header-container .col-sm-12 .play-showreel .play-icon .fas {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: 0.25rem;
+}
+
+.main .main-header .container .header-container .col-sm-12 .bold-title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.0625rem;
+  margin-bottom: 3rem;
+}
+
+.main .main-header .container .header-container .col-sm-12 .row .btn-about-us {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #424551;
+  width: 10rem;
+  height: 3.25rem;
+  border: 0.1rem solid #F52F6E;
+  border-radius: 0.25rem;
+  margin-right: 1rem;
+  background-color: transparent;
+  color: #FF3F3A;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .main-header .container .header-container .col-sm-12 .row .btn-about-us:hover {
+  background-image: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .main-header .container .header-container .col-sm-12 .row .btn-courses {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #424551;
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  border-radius: 0.25rem;
+  color: #fff;
+  border: none;
+  width: 12.5rem;
+  height: 3.25rem;
+}
+
+.main .main-header .container .courses-statistics {
+  margin: 0;
+  padding: 0;
+}
+
+.main .main-header .container .courses-statistics .list-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+}
+
+.main .main-header .container .courses-statistics .list-inline .list-inline-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main-header .container .courses-statistics .list-inline .list-inline-item .statistics-number {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.875rem;
+  line-height: 2.5rem;
+  color: #1E212C;
+  margin-right: 0.8rem;
+}
+
+.main .main-header .container .courses-statistics .list-inline .list-inline-item .statistics-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #424551;
+}
+
+.main .who-we-are {
+  padding: 8rem 0;
+  position: relative;
+}
+
+.main .who-we-are::after {
+  position: absolute;
+  top: 25%;
+  left: -19%;
+  width: 20%;
+  height: 30%;
+  content: '';
+  background-image: url(../why-createx/icons/dots.svg);
+  background-size: 43%;
+  background-repeat: no-repeat;
+}
+
+.main .who-we-are::before {
+  position: absolute;
+  right: -30%;
+  top: 49%;
+  content: '';
+  width: 20%;
+  height: 35%;
+  background-image: url(../why-createx/icons/circles.svg);
+  background-size: 43%;
+  background-repeat: no-repeat;
+}
+
+.main .who-we-are .container-fluid div:nth-child(1) {
+  padding: 0;
+}
+
+.main .who-we-are .container-fluid .reasons {
+  padding-left: 5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .who-we-are .container-fluid .reasons .sub-title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  color: #1E212C;
+  margin-bottom: 0.5rem;
+}
+
+.main .who-we-are .container-fluid .reasons .title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.875rem;
+  line-height: 2.5rem;
+  color: #1E212C;
+  margin-bottom: 2.5rem;
+}
+
+.main .who-we-are .container-fluid .reasons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .who-we-are .container-fluid .reasons div p {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 160%;
+  color: #1E212C;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 0.8rem;
+}
+
+.main .who-we-are .container-fluid .reasons div p img {
+  margin: 0.35rem;
+}
+
+.main .who-we-are .container-fluid .reasons .more {
+  width: 10rem;
+  height: 2.75rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #424551;
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  border-radius: 0.25rem;
+  color: #fff;
+  border: none;
+  margin-top: 3rem;
+}
+
+.main .featured-courses {
+  padding: 5rem 0 6.25rem 0;
+}
+
+.main .featured-courses .courses-list {
+  margin: 0;
+  padding: 0 1.5rem;
+}
+
+.main .featured-courses .courses-list .courses-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #FFFFFF;
+  border: 1px solid #E5E8ED;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+          box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+  padding: 0;
+  margin-bottom: 2rem;
+  width: 49%;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .featured-courses .courses-list .courses-item:hover {
+  position: relative;
+  z-index: 999;
+  -webkit-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+          box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .featured-courses .courses-list .courses-item .course-img {
+  height: auto;
+  padding: 0;
+}
+
+.main .featured-courses .courses-list .courses-item .course-info {
+  padding: 2rem;
+  padding-bottom: 0;
+  padding-right: 1rem;
+}
+
+.main .featured-courses .courses-list .courses-item .course-info .course-type {
+  min-width: 5rem;
+  background-color: #03CEA4;
+  padding: 1px 0.5rem;
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 160%;
+  color: #1E212C;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 1.25rem;
+  padding: 1px 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.main .featured-courses .courses-list .courses-item .course-info .color-info {
+  background-color: #5A87FC;
+}
+
+.main .featured-courses .courses-list .courses-item .course-info .color-warning {
+  background-color: #f89828;
+}
+
+.main .featured-courses .courses-list .courses-item .course-info .color-red-magenta {
+  background-color: #F52F6E;
+}
+
+.main .featured-courses .courses-list .courses-item .course-info .course-name {
+  display: block;
+  height: 3rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 150%;
+  text-align: center;
+  color: #424551;
+  text-align: start;
+  margin-bottom: 1.25rem;
+}
+
+.main .featured-courses .courses-list .courses-item .course-info .course-owner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 150%;
+  color: #787A80;
+}
+
+.main .featured-courses .courses-list .courses-item .course-info .course-owner .course-price {
+  color: #FF4242;
+  margin-right: 0.5rem;
+}
+
+.main .featured-courses .courses-list .courses-item .course-info .course-owner .tree {
+  width: 2px;
+  height: 1rem;
+  background-color: #787A80;
+  margin-right: 0.5rem;
+}
+
+.main .featured-courses .courses-list .courses-titles {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+
+.main .featured-courses .courses-list .courses-titles .sub-title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  color: #1E212C;
+  margin-bottom: 0.5rem;
+}
+
+.main .featured-courses .courses-list .courses-titles .title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.875rem;
+  line-height: 2.5rem;
+  color: #1E212C;
+  margin-bottom: 3rem;
+}
+
+.main .featured-courses .courses-list .courses-btns {
+  position: relative;
+  padding: 0;
+  border: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main .featured-courses .courses-list .courses-btns .courses-all {
+  bottom: 3.75rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #424551;
+  width: 10rem;
+  height: 3.25rem;
+  border: 0.1rem solid #F52F6E;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: #FF3F3A;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 3rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main .featured-courses .courses-list .courses-btns .courses-all:hover {
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  border-radius: 0.25rem;
+  color: #fff;
+  border: none;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .benefits {
+  padding: 5rem 0;
+}
+
+.main .benefits .container-fluid {
+  padding: 0 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main .benefits .container-fluid .sub-title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  color: #1E212C;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.main .benefits .container-fluid .title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.875rem;
+  line-height: 2.5rem;
+  color: #1E212C;
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+
+.main .benefits .container-fluid .benefits-sections {
+  padding: 0 1rem;
+}
+
+.main .benefits .container-fluid .benefits-sections .benefits-item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #424551;
+  color: #9A9CA5;
+  height: 2.875rem;
+  padding: 0;
+  cursor: pointer;
+}
+
+.main .benefits .container-fluid .benefits-sections .benefits-item .fal, .main .benefits .container-fluid .benefits-sections .benefits-item .far {
+  margin-right: 0.5rem;
+}
+
+.main .benefits .container-fluid .benefits-sections .benefits-item:hover {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #787A80;
+}
+
+.main .benefits .container-fluid .benefits-sections .benefits-item:active {
+  border: 1px solid #FF3F3A;
+  color: #FF3F3A;
+}
+
+.main .benefits .container-fluid .about-tutors {
+  padding: 4.3rem 0;
+}
+
+.main .benefits .container-fluid .about-tutors .tutor-info {
+  padding-right: 1rem;
+}
+
+.main .benefits .container-fluid .about-tutors .tutor-info .tutor-title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.875rem;
+  line-height: 2.5rem;
+  color: #1E212C;
+  font-size: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.main .benefits .container-fluid .about-tutors .tutor-info .tutor-text {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+
+.main .events {
+  padding: 5rem 0;
+  background-image: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+}
+
+.main .events .events-container .sub-title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  color: #1E212C;
+  text-align: center;
+}
+
+.main .events .events-container .title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.875rem;
+  line-height: 2.5rem;
+  color: #1E212C;
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+
+.main .events .events-container .events-container-item {
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .events .events-container .events-container-item:hover {
+  position: relative;
+  z-index: 999;
+  -webkit-box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+          box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .events .events-container .events-container-item .data-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .events .events-container .events-container-item .data-number .data-number-item {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: #FF3F3A;
+  margin: 0;
+}
+
+.main .events .events-container .events-container-item .data-month {
+  padding: 1.25rem 0.5rem;
+}
+
+.main .events .events-container .events-container-item .data-month .data-month-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 150%;
+  text-align: center;
+  color: #424551;
+  color: #1E212C;
+  text-align: start;
+  margin-bottom: 4px;
+}
+
+.main .events .events-container .events-container-item .data-month .data-month-time {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  color: #787A80;
+  margin: 0;
+}
+
+.main .events .events-container .events-container-item .master-class {
+  padding: 1.25rem 0.5rem;
+}
+
+.main .events .events-container .events-container-item .master-class .master-class-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 150%;
+  text-align: center;
+  color: #424551;
+  color: #1E212C;
+  text-align: start;
+  margin-bottom: 4px;
+}
+
+.main .events .events-container .events-container-item .master-class .master-class-shape {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  color: #787A80;
+  margin: 0;
+}
+
+.main .events .events-container .events-container-item .master-class-more {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main .events .events-container .events-container-item .master-class-more .master-class-more-btn {
+  min-width: 4rem;
+  height: 2.75rem;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #FF3F3A;
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 160%;
+  color: #1E212C;
+  color: #FF3F3A;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .events .events-container .events-container-item .master-class-more .master-class-more-btn:hover {
+  background-image: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=style.css.map */
